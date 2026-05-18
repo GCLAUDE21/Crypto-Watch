@@ -1,9 +1,41 @@
-# Crypto Watch Tower
+# 📈 Crypto Watch
 
-Market data : `https://api.coingecko.com/api/v3/global`
+🌐 [https://gclaude21.github.io/crypto-watch](https://gclaude21.github.io/crypto-watch)
 
-All market data : `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C14d%2C30d%2C200d%2C1y`
+Tableau de bord de suivi des prix crypto en temps réel, construit avec React.
 
-Coin price chart : `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=${duration}${duration > 32 ? "&interval=daily" : ""}`
+## Description
 
-Coingecko : `https://www.coingecko.com/fr/pi%C3%A8ces/`
+Crypto Watch permet de visualiser l'évolution des prix des principales cryptomonnaies via des graphiques interactifs. Les données sont récupérées en direct depuis l'API CoinGecko. L'utilisateur peut filtrer l'historique sur différentes périodes : 1 jour, 3 jours, 7 jours, 1 mois, 3 mois, 6 mois, 1 an ou depuis le début.
+
+## Stack
+
+| Technologie   | Usage                  |
+| ------------- | ---------------------- |
+| React         | Framework UI           |
+| Recharts      | Graphiques (AreaChart) |
+| Axios         | Appels API             |
+| CoinGecko API | Données de marché      |
+| SCSS          | Styles                 |
+| GitHub Pages  | Déploiement            |
+
+## Installation
+
+```bash
+git clone https://github.com/GCLAUDE21/crypto-watch.git
+cd crypto-watch
+npm install
+npm start
+```
+
+## Déploiement
+
+```bash
+npm run deploy
+```
+
+Site disponible sur : [https://gclaude21.github.io/crypto-watch](https://gclaude21.github.io/crypto-watch)
+
+---
+
+Projet réalisé dans le cadre d'une formation Développeur Web.
